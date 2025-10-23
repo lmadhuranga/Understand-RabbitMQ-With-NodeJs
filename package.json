@@ -1,0 +1,18 @@
+{
+  "name": "rabbitmq-ecom-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/order-service.js",
+  "scripts": {
+    "start:order": "node src/order-service.js",
+    "start:inventory": "node src/consumers/inventory.js",
+    "start:payment": "node src/consumers/payment.js",
+    "start:email": "node src/consumers/email.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nanoid": "^5.0.7"
+  }
+}
