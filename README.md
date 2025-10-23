@@ -63,7 +63,7 @@ RabbitMQ ensures messages reach their destinations via **queues and topics**, ma
 ---
 
 ### 3️⃣ Queues (Message Buffers)
-
+`
 - Queues act as temporary storage buffers.
 - Services can process messages **asynchronously**, at their own pace.
 - If a service is down, RabbitMQ holds messages until it comes back online.
